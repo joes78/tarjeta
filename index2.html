@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <h1>Completa el Pedido</h1>
+    </header>
+    <hr>
+    <form>
+        <div class="container">
+            <div class="row">
+                <div class="col-25">
+                    <label>NOMBRE COMPLETO</label>
+                </div>
+                <div class="col-75">
+                    <input type="text"  maxlength="30" size="20" required placeholder="nombres y apellidos">
+                </div>    
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>Cual es tu Numero telefonico?</label>
+                </div>
+                <div class="col-75">
+                    <input type="text"  maxlength="20" size="20" required placeholder="+591 78882866">
+                </div>    
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>Cual es tu direccion</label>
+                </div>
+                <div class="col-75">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d61205.56846079796!2d-68.1443328!3d-16.5085184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sbo!4v1650938824262!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>    
+            </div>   
+        <br><br>
+        <label>Como Calificaria Nuestro Servicio</label>
+        <select name="raza">
+            <option value="1">Pesimo</option>
+            <option value="2">Malo</option>
+            <option value="3">Regular</option>
+            <option value="4">Bueno</option>
+            <option value="5">Excelente</option>
+          
+        </select> 
+        <br><br>
+        <label>Cual es el tu correo electronico</label>
+        <input type="email" maxlength="30" size="30" required>
+        <br><br>
+        <textarea placeholder="Observaciones.." style="height:200px"></textarea>
+        <br>
+        <input type="submit" value="Registrar" >
+        <input type="reset" value="Limpiar">
+        
+    </div>
+
+     
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: rgb(228, 199, 189);
+   
+    color: rgb(5, 44, 78);
+
+}
+
+header{
+    text-align: center;
+    padding: 5px 15px;
+    border: 3px double rgb(44, 13, 219);
+    margin: 10px;
+}
+
+  img{
+    display:  block;
+    margin-left: auto;
+    margin-right:auto;
+    border: 10px solid whitesmoke;
+    border-radius: 20px;
+    padding: 10px;
+    width: 70%;
+  }
+
+h2{
+    font-size: 32px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 5px inset hsl(257 , 19%, 93%);
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+    text-decoration-line: underline;
+    color: white;
+}
+p{
+    margin: 10px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 20px ;
+    text-align: justify;
+}
+h3{
+  font-size: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+  
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    grid-template-rows: minmax(10px auto);
+    padding: 10px;
+   
+  }
+  .container div {
+    background: #424141;
+    padding: 2em;
+    
+  }
+  .container div:hover {
+    border: 2px solid rgb(56, 8, 8);
+  }
+  @media screen and (max-width: 900px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1em;
+        grid-template-rows: minmax(50px auto);
+        padding: 10px;
+        margin:10px;
+      }
+      .container div {
+        background: #6430a7;
+        padding: 1em;
+      }
+      .container div:hover {
+        border: 2px solid rgb(42, 16, 90);
+      }
+   
+  }
+  @media screen and (max-width: 700px) {
+    body {
+      background-image: url("fondo2.jpg");
+      background-color: #172e47;
+    }
+    
+    img {
+      display: block;
+      border: 2px solid whitesmoke;
+      border-radius: 12px;
+      padding: 10px;
+      width: 90%;
+      margin:10px;
+    }
+    p {
+        font-size: 24px;
+      
+      }
+      h2 {
+        font-size: 25px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        border: 10px inset rgb(161, 49, 15);
+        color: rgb(12, 5, 53);
+        
+        padding: 10px 10px 10px 20px;
+        margin: 10px;
+      }
+    
+      .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1em;
+        grid-template-rows: minmax(50px auto);
+        padding: 10px;
+        margin:10px;
+      }
+      .container div {
+        background: #6430a7;
+        padding: 1em;
+      }
+      .container div:hover {
+        border: 2px solid rgb(42, 16, 90);
+      }
+  
+      .menu a {
+        float: none;
+        width: 100%;
+        margin: 2px;
+        padding: 6px 16px;
+        font-size: 16px;
+      }
+
+  }
